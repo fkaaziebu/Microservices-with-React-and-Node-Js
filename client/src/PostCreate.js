@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
   const [title, setTitle] = useState("");
 
@@ -17,7 +18,7 @@ export default () => {
   return (
     <div>
       <form onSubmit={onSubmit}>
-        <div className="form-group">
+        <div className="form-group mb-3">
           <label>Title</label>
           <input
             value={title}

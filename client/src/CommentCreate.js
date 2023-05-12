@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default ({ postId }) => {
   const [content, setContent] = useState("");
 
@@ -17,7 +18,7 @@ export default ({ postId }) => {
   return (
     <div>
       <form onSubmit={onSubmit}>
-        <div className="form-group">
+        <div className="form-group mb-3">
           <label>New Comment</label>
           <input
             value={content}

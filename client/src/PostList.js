@@ -3,6 +3,7 @@ import axios from "axios";
 import CommentCreate from "./CommentCreate";
 import CommentList from "./CommentList";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
   const [posts, setPosts] = useState({});
 
